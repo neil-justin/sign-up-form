@@ -18,6 +18,7 @@ body {
 }
 
 .sidebar {
+    min-width: 230px;
     width: 35%;
     height: auto;
     display: flex;
@@ -35,20 +36,19 @@ body {
     opacity: 0.6;
     padding: 10px;
     width: 100%;
-    height: 100px;
+    height: 120px;
     position: absolute;
-    bottom: 500px;
+    top: 170px;
 }
 
 .logo {
-    width: 17%;
-    height: 80px;
+    width: auto;
 }
 
 .logo-name {
     color: white;
     font-family: norse-bold, sans-serif;
-    font-size: 65px;
+    font-size: 80px;
     /* to vertically aligned the text */
     padding-top: 10px;
 }
@@ -56,6 +56,7 @@ body {
 main.content {
     background-color: #f9fafb;
     width: 70%;
+    min-width: 410px;
     display: flex;
     flex-direction: column;
     justify-content: center;
