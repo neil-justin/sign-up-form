@@ -56,21 +56,19 @@ body {
 main.content {
     background-color: #f9fafb;
     width: 70%;
-    min-width: 410px;
+    min-width: 450px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 50px 0;
 }
 
-.foreword-cntr,
 .submit-form-cntr {
-    padding-left: 50px;
-    padding-right: 90px;
+    padding: 0 50px;
 }
 
 .foreword-cntr {
-    margin-bottom: 50px;
+    padding: 0 clamp(50px, 20%, 180px) 50px 50px;
 }
 
 .form-cntr {
@@ -113,8 +111,8 @@ form label {
 }
 
 .submit-form-cntr .create-account-btn {
-    width: 180px;
-    height: 40px;
+    width: 215px;
+    height: 45px;
     border-radius: 5px;
     background-color: #596D48;
     border: 1px solid #596D48;
