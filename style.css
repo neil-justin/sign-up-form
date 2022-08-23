@@ -59,12 +59,7 @@ main.content {
     min-width: 450px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     padding: 50px 0;
-}
-
-.submit-form-cntr {
-    padding: 0 50px;
 }
 
 .foreword-cntr {
@@ -94,7 +89,7 @@ form input {
     width: 270px;
     height: 27px;
     border-radius: 5px;
-    padding: 0 10px 0 10px;
+    padding: 0 10px;
 }
 
 input:focus {
@@ -107,28 +102,29 @@ form label {
 }
 
 .submit-form-cntr {
-    padding-top: 30px;
+    --secondary-color: #596D48;
+    padding: 30px 50px 0;
 }
 
-.submit-form-cntr .create-account-btn {
+.create-account-btn {
     width: 215px;
     height: 45px;
     border-radius: 5px;
-    background-color: #596D48;
-    border: 1px solid #596D48;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
     color: white;
     font-weight: bold;
 }
 
-.submit-form-cntr .create-account-btn:hover {
+.create-account-btn:hover {
     cursor: grab;
 }
 
-.submit-form-cntr .login-btn {
-    color: #596D48;
+.login-anchor {
+    color: var(--secondary-color);
     font-weight: bold;
 }
 
-.submit-form-cntr .login-btn:hover {
+.login-anchor:hover {
     text-decoration: none;
 }
